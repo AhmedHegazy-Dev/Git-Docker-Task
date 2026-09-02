@@ -20,7 +20,7 @@ total = (sales_df['quantity'] * sales_df['price']).sum()
 save_file_path = os.path.join(base_dir, "data", "processed_sales.txt")
 
 with open(save_file_path, "w") as f:
-    f.write(f"Total Sales: {total}")
-    f.write(f"Total Quantity: {quantity}")
-    f.write(f"Total products: {count}")
+    f.write(f"Total Sales: {total}\n")
+    f.write(f"Total Quantity: {quantity}\n")
+    f.write(f"Total products: {count}\n")
 
